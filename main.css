@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #fc7712;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #141519;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+}
+.icon {
+  display: block;
+  background-color: #252e37;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+.card-container {
+  background: #1f2630;
+  border-radius: 20px;
+  padding: 20px 20px;
+  width: 100%;
+  max-width: 400px;
+}
+.card-container.hidden {
+  display: none;
+}
+
+h2 {
+  color: #fff;
+  padding-top: 0.9rem;
+}
+p {
+  color: rgb(182, 181, 181);
+  padding: 20px 0;
+  line-height: 1.5rem;
+}
+.rating-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  color: rgb(146, 145, 145);
+  list-style: none;
+  width: 100%;
+}
+
+.rating-num {
+  border-radius: 50%;
+  background-color: #262f38;
+  padding: 0.5rem 0.5rem;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: rgb(182, 181, 181);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.rating-num:hover {
+  background-color: rgb(179, 177, 177);
+  color: #fff;
+}
+
+.rating-num.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  margin: 20px 0;
+  appearance: none;
+  border-color: transparent;
+  padding: 10px 30px;
+  background: var(--primary-color);
+  border-radius: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+.img-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+.btn-2 {
+  appearance: none;
+  border-color: transparent;
+  padding: 5px 30px;
+  color: var(--primary-color);
+  border-radius: 50px;
+  background-color: #262f38;
+  margin-top: 20px;
+}
+.h2 {
+  padding-top: 1rem;
+}
